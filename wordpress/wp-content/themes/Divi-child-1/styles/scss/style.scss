@@ -19,9 +19,36 @@ body {
 	font-family: 'Arial Rounded MT';
 }
 
-.clearfix {
-
+.owl-dot {
+  background: url('img/dot.png') left top no-repeat;
+  width: 31px;
+  height: 31px;
+  margin-right: 5px;
+  display: block;
+  float: left;
 }
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  margin: auto;
+  display: table;
+}
+.owl-dot {
+  background: url('img/dot.png') left top no-repeat;
+  width: 31px;
+  height: 31px;
+  margin-right: 5px;
+  display: block;
+  float: left;
+}
+
+.owl-dot.active {
+  background: url('img/dot-active.png') left top no-repeat !important;
+}
+
 
 h1 {
 	font-family: 'Hugs and Kisses xoxo Demo';
@@ -46,6 +73,7 @@ h1 {
     height: 35px;
     border-radius: 10px;
     width: 100%;
+    background: transparent !important;
 }
 
 .ginput_container textarea {

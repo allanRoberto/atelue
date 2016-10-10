@@ -16,6 +16,37 @@ body {
   font-family: 'Arial Rounded MT';
 }
 
+.owl-dot {
+  background: url("img/dot.png") left top no-repeat;
+  width: 31px;
+  height: 31px;
+  margin-right: 5px;
+  display: block;
+  float: left;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  margin: auto;
+  display: table;
+}
+
+.owl-dot {
+  background: url("img/dot.png") left top no-repeat;
+  width: 31px;
+  height: 31px;
+  margin-right: 5px;
+  display: block;
+  float: left;
+}
+
+.owl-dot.active {
+  background: url("img/dot-active.png") left top no-repeat !important;
+}
+
 h1 {
   font-family: 'Hugs and Kisses xoxo Demo';
   color: #642366;
@@ -31,27 +62,6 @@ h1 {
   display: none;
 }
 
-.owl-nav {
-  display: none;
-}
-
-.owl-dots {
-  margin: auto;
-  display: table;
-}
-.owl-dot {
-  background: url('img/dot.png') left top no-repeat;
-  width: 31px;
-  height: 31px;
-  margin-right: 5px;
-  display: block;
-  float: left;
-}
-
-.owl-dot.active {
-  background: url('img/dot-active.png') left top no-repeat !important;
-}
-
 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
   font-size: inherit;
   font-family: inherit;
@@ -60,6 +70,7 @@ h1 {
   height: 35px;
   border-radius: 10px;
   width: 100%;
+  background: transparent !important;
 }
 
 .ginput_container textarea {
@@ -267,6 +278,34 @@ body .gform_wrapper ul li.gfield {
   position: relative;
 }
 
+.icon-menu-social-footer a {
+  text-indent: -9999px;
+  display: table;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  margin-top: 29px;
+}
+
+.icon-menu-social-footer a:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  float: left;
+  top: -31px;
+  position: relative;
+}
+
+.icon-footer-facebook {
+  background: url("img/icon-footer-social-facebook.png") left top no-repeat;
+  background-color: transparent !important;
+}
+
+.icon-footer-instagram {
+  background: url("img/icon-footer-social-instagram.png") left top no-repeat;
+  background-color: transparent !important;
+}
+
 .home .icon-facebook {
   background: url("img/icone-facebook.png") left top no-repeat;
   background-color: transparent !important;
@@ -361,17 +400,30 @@ body .gform_wrapper ul li.gfield {
   margin-left: -20px;
 }
 
-#menu-rodape:before {
+.fullwidth-menu.nav {
+  top: -10px;
+  position: relative;
+}
+
+.fullwidth-menu li {
+  display: inline-block;
+  padding-right: 22px;
+  font-size: 14px;
+  width: 115px;
+  padding-right: 5px;
+}
+
+.et_pb_fullwidth_menu:before {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 29%;
   display: block;
   background: #e7214e;
   background: linear-gradient(to right, #e7214e 0%, #f16534 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7214e', endColorstr='#f16534',GradientType=1 );
-  height: 100%;
-  top: -22px;
-  border-radius: 0px 20px 20px 0px;
+  height: 77%;
+  top: -32px;
+  border-radius: 0px 50px 50px 0px;
   z-index: 0;
   margin-left: -20px;
 }
