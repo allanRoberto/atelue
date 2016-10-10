@@ -6,6 +6,7 @@
 *.sass-cache/
 *.sublime*
 db/
+layout/
 docs/
 backups/
 webroot/
